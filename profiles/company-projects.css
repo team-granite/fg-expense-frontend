@@ -12,6 +12,10 @@ button {
   border: none;
 }
 
+.active {
+  background: white;
+}
+
 .reponsive-div {
   width: 80%;
   margin: 0 auto;
@@ -24,7 +28,7 @@ button {
 }
 
 .company {
-  padding: 10px;
+  padding: 10px 10px 0 10px;
   background-color: #e5e5e5;
   color: black;
 }
@@ -71,7 +75,7 @@ button {
 }
 
 .table-top span:hover {
-  background: grey;
+  background: #f2f2f2;
 }
 
 .table-top button {
@@ -79,7 +83,7 @@ button {
   background: #00945e;
   color: white;
   border-radius: 3px;
-  cursor: pointer
+  cursor: pointer;
 }
 
 input {
@@ -93,11 +97,15 @@ form > div {
   display: inline-block;
 }
 
+form> div> span {
+  font-size: 0.6rem;
+  padding-left: 10px;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  /* border: 1px solid #ddd; */
 }
 
 th,
@@ -115,30 +123,45 @@ tr {
   border-bottom: 1px solid #f2f2f2;
 }
 
-/* tr:nth-child(even) {
-  background-color: #f2f2f2;
-} */
-
 .pagination {
   float: right;
   margin: 10px 0;
 }
 
-.pagination a {
+.pagination span {
   color: black;
   float: left;
   padding: 8px 16px;
   text-decoration: none;
   transition: background-color 0.3s;
+  border: 1px solid #f2f2f2;
+  cursor: pointer;
 }
 
-.pagination a.active {
+.pagination span:hover {
+background: #f2f2f2
+}
+
+.pagination span.active {
   background-color: #00945e;
   color: white;
 }
 
 .pagination a:hover:not(.active) {
   background-color: #ddd;
+}
+
+.next,
+.previous {
+  font-size: 16px;
+  background: #00945e !important;
+  color: white !important;
+  padding: 8px 16px !important;
+}
+
+.previous:hover,
+.next:hover {
+  background: #086543db !important;
 }
 
 @media screen and (max-width: 480px) {

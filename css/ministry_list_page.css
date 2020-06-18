@@ -1,0 +1,222 @@
+*{
+	box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+	padding: 0px;
+	margin: 0px;
+	font-style: normal;
+	position: relative;
+	font-family: sans-serif;
+}
+header{
+	width: 100%;
+	height: 96px;
+}
+li{
+	list-style: none;
+}
+.ministry_list_header{
+	height: 134px;
+	width: 100%;
+}
+.expense_ng_logo img {
+	width: 75px;
+	height: 45px;
+	margin: 5px 0px 0px 50px;
+	position: absolute;
+}
+.ministry_list_logo{
+	color: #00945E;
+	font-size: 30px;
+	font: bold;
+	float: left;
+    order: 1;
+    width: 25%;
+    line-height: 60px;
+    margin-left: 120px;
+}
+.ministry_list_navbar{
+	float: right;
+	order: 2;
+	width: 65%;
+	padding: 0 1%;
+	transition: all 0.5s ease;
+}
+#ministry_list_menu_icon{
+	display: none;
+	float: right;
+	margin-top: 15px;
+	margin-right: 20px;
+	font-size: 25px;
+	cursor: pointer;
+}
+.ministry_list_navlink{
+	float: left;
+	line-height: 30px;
+	font-size: 20px;
+	margin-left: 5%;
+	color: #323E48;
+	font-weight: bold;
+}
+.ministry_list_page_title{
+	width: 100%;
+	height: 66px;
+	float: left;
+	order: 3;
+	background: #00945E;	
+	padding-left: 100px;
+	color: white;
+	font-size: 30px;
+	line-height: 66px;
+}
+.ministry_list_section{
+	width: 100%;
+}
+.ministry_list_description_body{
+	width: 100%;
+	height: 250px;
+	text-align: center;
+	background: #1F2430;
+	color: white;
+	font-weight: bold;
+	padding-top: 100px;
+	color: white;
+	font-size: 25px;
+}
+.ministry_list_body{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 10px;
+	height: auto;
+}
+.ministry_list_filter_body{
+	float: right;
+	width: 100%;
+	height: 40px;
+	margin-top: 35px;
+	position: relative;
+	transition: all 0.5s ease;
+}
+.search_box{
+	width: 50%;
+	float: left;
+}
+.search{
+	height: 40px;
+	width: 250px;
+	outline-color: #00945E;
+	font-size: 15px;
+}
+.sort_box{
+	width: 50%;
+	float: left;
+	text-align: right;
+}
+.sort_box select{
+	height: 40px;
+	width: 250px;
+	outline-color: #00945E;
+	font-size: 15px;
+}
+.sort_box select option{
+	outline: none;
+}
+.ministry_list_table{
+	border: 1px solid #00945E;
+	width: 100%;
+	margin-top: 35px;
+	float: left;
+	overflow-x:auto;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.ministry_twitter_handle_link, .minister_twitter_handle_link{
+	color: #6765EC;
+	cursor: pointer;
+}
+.ministry_list_amount{
+	color: #00945E;
+}
+.remove {
+  display: none;
+}
+@media screen and (max-width: 1220px){
+	.ministry_list_navbar{
+		width: 67%;
+	}
+	.ministry_list_navlink{
+		margin-left: 4%;
+	}
+	.ministry_list_logo{
+		margin-left: 85px;
+	}
+	.ministry_list_page_title{
+		padding-left: 50px;
+	}
+	.expense_ng_logo img {
+		margin-left: 15px;
+	}
+}
+@media screen and (max-width: 1103px){
+	#ministry_list_menu_icon{
+		display: block;
+	}
+	.ministry_list_navbar{
+		float: none;
+		position: absolute;
+		top: 110px;
+		width: 100%;
+		height: 0px;
+		z-index: 10;
+		text-align: center;
+		background: #00945E;
+		overflow: hidden;
+	}
+	.ministry_list_navlink{
+		float: none;
+		line-height: 50px;
+		color: white;
+	}
+}
+@media screen and (max-width: 700px){
+	.ministry_list_body{
+		width: 98%;
+		margin-left: 1%;
+	}
+}
+@media screen and (max-width: 602px){
+	.search_box{
+		width: 100%;
+	}
+	.sort_box{
+		width: 100%;
+		text-align: left;
+		margin-top: 10px;
+	}
+	.ministry_list_filter_body{
+		height: 80px;
+	}
+	.sort_box_label{
+		margin-right: 7px;
+	}
+}
+@media screen and (max-width: 450px){
+	.expense_ng_logo img {
+		margin-left: 5px;
+	}
+	.ministry_list_logo{
+		font-size: 20px;
+		margin-left: 75px;
+	}
+}

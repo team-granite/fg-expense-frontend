@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/ministry_list_page.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<!--============================begining of header section===============================-->
+	<header>
+		<div class="ministry_list_header">
+			<div class="expense_ng_logo"><img src="img\Expenseng_logo.png" alt="ExpenseNg-logo"></div>
+			<div class="ministry_list_logo">EXPENSENG<span style="color: black">.COM</span></div>
+			<ul class="ministry_list_navbar">
+				<li><a href="#" class="ministry_list_navlink">Home</a></li>
+				<li><a href="#" class="ministry_list_navlink">Daily Report</a></li>
+				<li><a href="#" class="ministry_list_navlink">Budget Explorer</a></li>
+				<li><a href="#" class="ministry_list_navlink">Profiles</a></li>
+				<li><a href="#" class="ministry_list_navlink">Lists</a></li>
+				<li><a href="#" class="ministry_list_navlink">About Us</a></li>
+			</ul>
+			 <div><i class="fa fa-bars" id="ministry_list_menu_icon"></i></div>
+			<div class="ministry_list_page_title">Ministry List</div>
+		</div>
+	</header>
+	<!--============================Ending of header section===============================-->
+
+	<!--=========================begining of Ministry list section========================-->
+	<main class="ministry_list_section">
+		<div class="ministry_list_description_body">
+			List of all the ministries and the total<br> funds allocated to each
+		</div>
+		<div class="ministry_list_body">
+			<div class="ministry_list_filter_body">
+	            <div class="search_box">
+	              <label class="search_label">Filter</label>
+	              <input class="search" id="filter" placeholder="Search Ministry..."/>
+            	</div>
+				<div class="sort_box">
+	              <label class="sort_box_label">Sort</label>
+	              <select placeholder="Sort">
+	                <option>Ministry</option>
+	                <option>Amount (highest first)</option>
+	                <option>Amount (lowest first)</option>
+	              </select>
+	            </div>
+			</div>
+			<div class="ministry_list_table">
+				<table>
+				  <tr class="ministry_list_table_header">
+				    <th>Ministry</th>
+				    <th>Ministry Twitter handle</th>
+				    <th>Minister</th>
+				    <th>Minister'sTwitter Handle</th>
+				    <th>Amount Allocated</th>
+				  </tr>
+				</table>
+			</div>
+		</div>
+	</main>
+	<!--=========================Ending of Ministry list section========================-->
+
+	<!--==============================begining of footer================================-->
+	<footer class="ministry_list_footer" style="display: none;">
+		<div class="ministry_list_footer_logo">
+			
+		</div>
+		<ul>
+			<li>About Us</li>
+			<li>About Expenseng.com</li>
+			<li>Contact Us</li>
+		</ul>
+		<ul>
+			<li>Profile</li>
+			<li>Minitry</li>
+			<li>Company</li>
+			<li>Sector</li>
+		</ul>
+		<ul>
+			<li>Pages</li>
+			<li>Home</li>
+			<li>Budget</li>
+			<li>Expense</li>
+			<li>Daily Payment Report</li>
+		</ul>
+		<ul>
+			<li>Lists</li>
+			<li>Ministry</li>
+			<li>Company</li>
+			<li>Gov.Contact</li>
+			<li>Individual Recipient</li>
+			<li>Daily Payment Report</li>
+			<li>Payment Unaccounted</li>
+		</ul>
+		<ul>
+			<li>Developer</li>
+			<li>Api</li>
+			<li>Explore Code</li>
+		</ul>
+		<div>
+			<span>Accessibility</span>
+			<span>Privacy Policy</span>
+			<span>Freedom of Information Act</span>
+			<span class="copyright">&copy; 2020 EXPENSENG.com</span>
+		</div>
+	</footer>
+	<!--==============================Ending of footer================================-->
+</body>
+<script type="text/javascript" src="js/ministry_list_page.js"></script>
+</html>

@@ -1,0 +1,130 @@
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    font-family: Lato;
+}
+.panel{
+    margin-bottom: 20px;
+}
+.other-list {
+    display: flex;
+      
+}
+.other-list img {
+    height: 150px;
+}
+
+.class-text h3, h5 {
+    width: 180px;
+    
+}
+
+.image-panel-1 img {
+    height: 200px;
+    width: 300px
+   
+}
+
+.image-panel-2 img{
+    height: 200px;
+    width: 300px;
+    margin-bottom: 0px
+}
+
+.other-list-text {
+    background-color: #FFFFFF;
+    padding-top: 2px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: Lato;
+    font-weight: lighter;
+}
+
+.other-list-text h4 {
+    margin-bottom: 20px;
+}
+
+.image-panel-2 {
+    position: relative;
+}
+
+.learn-more-1 {
+    /* font-size: 17px; */
+    font-family: Lato;
+    position: absolute;
+    top: 175px;
+    left: 0px;
+    background-color: #00945E;
+    width: 100px;
+    height: 25px;
+    color: white;
+    
+}
+.image-panel-1 {
+    position: relative;
+}
+.container-panel {
+    margin: 40px;
+
+}
+
+.container-panel .other{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.learn-more {
+    color: white;
+    /* font-size: 17px; */
+    font-family: Lato;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    background-color: #00945E;
+    width: 100px;
+    height: 25px;
+}
+h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid black; 
+    line-height: 10px 2px;
+    margin: 50px 0 20px; 
+ } 
+ 
+ h2 span { 
+     background: #ffffff;
+     padding:0 50px; 
+ }
+button {
+    border: 1px solid transparent;
+}
+@media screen and (max-width: 380px){
+    .other-list {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+}
+@media screen and (max-width: 768px){
+    body {
+        margin-top: 50px;
+    }
+
+    .other-list {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    h2{
+        margin-bottom: 35px;
+    }
+
+}

@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center ;
-    height: 100vh;
     flex-direction: column;
 }
 
@@ -39,7 +38,7 @@
 .list-text {
     background-color: #FFFFFF;
     padding-top: 2px;
-    padding-bottom: 25px;
+    padding-bottom: 62px;
     padding-left: 30px;
     padding-right: 30px;
     font-family: Lato;

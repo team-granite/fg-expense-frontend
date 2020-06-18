@@ -33,20 +33,33 @@ button {
   background-image: url('./imgs//Julius-Berger\ 1.png');
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10px 10px 0 10px;
+  padding: 10px 10px 0 40px;
   background-color: #e5e5e5;
   color: black;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  bottom: 30%;
 }
 
 .company img {
-  width: 30%;
+  width: 100%;
+  height: 10%;
+}
+
+.sub-nav {
+  display: flex;
+  position: absolute;
+  bottom: -1px;
 }
 
 .sub-nav > div {
-  display: inline-block;
   padding: 5px 10px;
-  background: #E1E1E1;
-  font-weight: 500
+  background: #e1e1e1;
+  font-weight: 500;
+  margin-right: 4px;
 }
 
 .table-section {
@@ -59,10 +72,10 @@ button {
   margin: 15px;
 }
 
-.table-top >h3{
-  color: #00945E;
+.table-top > h3 {
+  color: #00945e;
   margin: auto 0;
-  padding: 10px
+  padding: 10px;
 }
 
 .table-top button {
@@ -73,7 +86,7 @@ button {
   cursor: pointer;
 }
 
-.main-table{
+.main-table {
   border: 1px solid #f2f2f2;
   margin-top: 20px;
 }
@@ -93,10 +106,15 @@ td {
 
 th {
   background: white;
+  color: black !important;
   font-size: 1.2rem;
   font-weight: 600;
-  border-top: 1px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+tr > :nth-child(2) {
+  color: #00945e;
 }
 
 tr {
@@ -107,19 +125,20 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-.table-footer{
+.table-footer {
   display: flex;
   justify-content: space-between;
   padding: 5px 10px;
-  margin: 10px 5px
+  margin: 10px 5px;
 }
 
 .table-footer > span {
   margin: auto 0;
+  color: #191e29;
 }
 
-.pagination{
-  background: #f2f2f2
+.pagination {
+  background: #f2f2f2;
 }
 
 .pagination a {
@@ -136,7 +155,9 @@ tr:nth-child(even) {
   border: 1px solid #00945e !important;
 }
 
-.pagination a:hover:not(.active) {background-color: #ddd;}
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
 
 .pagination a:first-child {
   border-top-left-radius: 5px;
@@ -154,18 +175,32 @@ tr:nth-child(even) {
   }
 
   .table-top {
-    font-size: 0.8rem;;
+    font-size: 0.8rem;
   }
 
   .table-top > div {
     width: 100%;
   }
 
-  .table-footer{
-    display: block
+  .table-footer {
+    display: block;
   }
 
-  th{
-    font-size: 0.8rem
+  th {
+    font-size: 0.8rem;
+  }
+
+  .table-footer {
+    margin: 15px 5px 40px 5px;
+  }
+
+  .company {
+    padding: 10px 10px 0 10px;
+    height: 200px;
+  }
+
+  .image {
+    position: absolute;
+    bottom: 20px
   }
 }

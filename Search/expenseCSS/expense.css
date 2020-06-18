@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+  }
+  
+#myInput {
+  background-image: url('../searchicon.png');
+  background-position: 10px 12px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position-x: 96%;
+  width: 30%;
+  font-size: 16px;
+  padding: 12px 0px 12px 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+  
+#myInput:focus {
+    width: 50%;
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+  
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+h3 {
+  margin: 0px;
+}
+
+@media (min-width: 300px) and (max-width: 425px) {
+  #myInput {
+    width: 100%;
+  }
+  #myInput:focus {
+    width: 100%;
+  }
+  ::placeholder {
+    color: transparent;
+  }
+}
+@media (max-width: 768px) {
+  #myInput {
+    width: 100%;
+  }
+  #myInput:focus {
+    width: 100%;
+  }
+  ::placeholder {
+    color: transparent;
+  }
+}

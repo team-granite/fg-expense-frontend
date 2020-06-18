@@ -1,0 +1,159 @@
+.btlbtn {
+    margin-top: 30px;
+} 
+.backtolist {
+  margin-left: 7%;
+}
+.backtolist:hover {
+    opacity: 0.5;
+}
+div .portfolio {
+    margin-left: 6%;
+}
+.mindetails {
+    display: flex;
+    margin-left:-12%;
+    justify-content: space-evenly;
+}
+.imageportfolio {
+    display: inline-flex;
+    /* margin-left: 50%; */
+}
+.name {
+    padding: 30px;
+}
+.ministerimg {
+    height: 120px;
+    width: 100px;
+}
+.link1 {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.link1:hover {
+    opacity: 0.5;
+}
+.link2 {
+    font-weight: bold;
+    text-decoration: none;
+    color: black; 
+    padding-top: 10%;
+}
+.link2:hover {
+    opacity: 0.5;
+}
+.box {
+    display: inline-block;
+    height: 450px;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 5px 5px #888888;
+    margin-left: 7%;
+    margin-top: 5%;
+    width: 300px;
+    padding: 20px;
+}
+.link0 {
+    margin-left: 60%;
+    text-decoration: none;
+    color: black;
+}
+.link0:hover {
+    opacity: 0.5;
+}
+.productimg {
+    width: 100%;
+}
+@media only screen and (min-width: 320px){
+    .mindetails {
+        display: block;
+        margin-left: 5%;
+        line-height: 1.5;
+    }
+    .ministerimg {
+        height: 150px;
+        width: 150px;
+        margin-top: 20px;
+    }
+    .name {
+        padding: 15px;
+    }
+    
+}
+@media only screen and (min-width: 360px) {
+    .mindetails {
+        display: block;
+        margin-left: 5%;
+    }
+    
+    .ministerimg {
+        height: 150px;
+        width: 150px;
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width: 700px) {
+    .mindetails {
+        display: flex;
+        margin-left: 3%;
+    }
+    .ministerimg {
+        height: 120px;
+        width: 120px;
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .mindetails {
+        display: flex;
+        margin-left: -9%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .box {
+        display: grid;
+        margin-left: 1%;
+    }
+    
+}
+@media only screen and (max-width: 360px){
+    .box {
+        display: grid;
+        margin-left: 2%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .box {
+        display: grid;
+        margin-left: 2%;
+        width: 100%;
+        text-align: center;
+    }
+    .projectimg {
+        margin-left: 30%;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    #third {
+        margin-left: 27%;
+    }
+}
+.minint {
+    width: 60%;
+    margin-left: 5%;
+}
+.link3 {
+    color: rgb(16, 110, 233);
+    text-decoration: none;
+}
+.link3:hover {
+    opacity: 0.5;
+}
+.link4 {
+    text-decoration: none;
+    margin-left: 2%;
+    color: rgb(16, 110, 233);
+}
+.link4:hover {
+    opacity: 0.5;
+}

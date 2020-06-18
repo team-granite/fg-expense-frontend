@@ -1,59 +1,74 @@
-body{
+* {
+    box-sizing: border-box !important;
+}
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
 }
-.container{
+
+.container {
     text-align: center;
 }
-.logo1{
+
+.logo1 {
     width: 60px;
     margin-top: 10px;
     margin-left: 10px;
 }
-.logo2{
-width: 120px;
-margin-left: -10px;
+
+.logo2 {
+    width: 120px;
+    margin-left: -10px;
 }
-.hide-mobile{
-display: none;
+
+.hide-mobile {
+    display: none;
 }
-.menu{
-   margin-top: 35%; 
-   margin-right: 15px;
+
+.menu {
+    margin-top: 35%;
+    margin-right: 15px;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
 }
-li{
-list-style-type: none;
+
+li {
+    list-style-type: none;
 }
-nav ul{
+
+nav ul {
     position: fixed;
     width: 40%;
     top: 0;
     right: 0;
     text-align: left;
-    background:rgb(13, 189, 136);
+    background: rgb(13, 189, 136);
     height: 100%;
     padding: 3em;
 }
-nav ul li a{
-color: white;
-text-decoration: none;
-display: block;
-width: 100%;
-padding: 1em ;
-background-color: rgb(32, 128, 99);
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em;
+    background-color: rgb(32, 128, 99);
 }
-.exit-btn{   
-margin-bottom: 1em;
-margin-top: -1.3em;
-cursor: pointer;
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    cursor: pointer;
 }
+
 /* banner */
-.home-banner{
+.home-banner {
     background-color: #00945E;
     width: 96.5%;
     height: 30px;
@@ -65,23 +80,27 @@ cursor: pointer;
     font-size: .9em;
     font-weight: 900;
 }
-.banner{
+
+.banner {
     width: 100%;
     background: #80CAAF;
     margin-top: -21px;
 }
-.banner h1{
-    font-size: 1.5em; 
+
+.banner h1 {
+    font-size: 1.5em;
     font-weight: bold;
     padding-top: 25px;
     padding-left: 20px;
     padding-right: 20px;
 }
-.banner p{
+
+.banner p {
     font-size: 12px;
     padding: 0 20px;
 }
-.home-btn{
+
+.home-btn {
     width: 120px;
     background: #FFFFFF;
     border: 1.5px solid #00945E;
@@ -94,32 +113,192 @@ cursor: pointer;
     margin-bottom: 20px;
     cursor: pointer;
 }
-.home-btn:hover{
+
+.home-btn:hover {
     background-color: rgb(248, 245, 245);
 }
 
-@media only screen and (min-width: 650px){
-    .menu{
-margin-right: 30px;
+/* Twitter handle page style starts below */
+
+.header {
+    height: auto;
+    padding: 1rem 2rem;
+    background-color: #323E48;
+    color: #fff;
+}
+
+.page-desc {
+    height: auto;
+    width: 100%;
+    padding: 5%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+}
+
+.min-search {
+    height: auto;
+    margin: auto;
+}
+
+.search-wrapper {
+    width: 100%;
+    height: auto;
+    border: solid 1px grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#min-name {
+    width: 80%;
+    height: inherit;
+    border: transparent;
+    padding: .5rem;
+}
+
+#min-name:focus {
+    outline: none;
+}
+
+.search-btn {
+    width: 20%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    background-color: #00945e;
+    color: #fff;
+}
+
+.select-min {
+    height: auto;
+
+    margin: auto;
+}
+
+.select-wrapper {
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+    margin: 1.5% 0;
+}
+
+select#min-select {
+    width: 100%;
+    height: 2rem;
+    outline: 1px;
+    border-radius: 5px;
+}
+
+select * {
+    background-color: #fff;
+}
+
+#ministry-tab,
+#minister-tab {
+    width: 100%;
+}
+
+
+
+
+.info-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.ministry-info:nth-child(even),
+.minister-info:nth-child(even) {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+.ministry-info,
+.minister-info {
+    width: 100%;
+    padding: 0 2.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #191e29;
+}
+
+.info-header {
+    background-color: #00945E;
+    color: #fff;
+}
+
+@media screen and (min-width: 320px) {
+    .min-search {
+        width: 90%;
     }
-    .home-btn{
+
+    .select-min {
+        width: 90%;
+    }
+
+    #ministry-tab,
+    #minister-tab {
+        padding: 5%;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .min-search {
+        width: 50%;
+    }
+
+    .select-min {
+        width: 50%;
+    }
+
+    #ministry-tab,
+    #minister-tab {
+        padding: 10%;
+    }
+}
+
+/* The end of Handle Page style */
+
+@media only screen and (min-width: 650px) {
+    .menu {
+        margin-right: 30px;
+    }
+
+    .home-btn {
         width: 140px;
     }
 }
 
-@media only screen and (min-width: 1024px){
-    body{
+@media only screen and (min-width: 1024px) {
+    body {
         overflow-x: hidden;
     }
-    .logo1{
+
+    .logo1 {
         width: 80px;
         margin-top: 8px;
         margin-left: 30px;
     }
-    .logo2{
+
+    .logo2 {
         width: 150px;
     }
-    nav ul{
+
+    nav ul {
         width: auto;
         position: inherit;
         background: none;
@@ -127,30 +306,38 @@ margin-right: 30px;
         display: flex;
         padding-top: 0;
     }
-    .show-desktop{
+
+    .show-desktop {
         display: block;
     }
-    .hide-desktop{
+
+    .hide-desktop {
         display: none;
     }
-    nav ul li{
+
+    nav ul li {
         float: left;
     }
-    .exit-btn{
+
+    .exit-btn {
         color: #fff;
     }
-    nav ul li a{
+
+    nav ul li a {
         color: #323E48;
         background-color: inherit;
         font-size: 18px;
     }
-    nav ul li a:hover{
+
+    nav ul li a:hover {
         text-decoration: underline rgb(13, 189, 136);
     }
-    .active{
+
+    .active {
         font-weight: bold;
     }
-    .home-banner{
+
+    .home-banner {
         width: 100%;
         margin-top: -15px;
         height: 40px;
@@ -159,21 +346,25 @@ margin-right: 30px;
         font-size: 1em;
         font-weight: 800;
     }
-    .banner{
+
+    .banner {
         margin-top: -28px;
         height: 300px;
     }
-    .banner h1{
-       padding-top: 50px;
+
+    .banner h1 {
+        padding-top: 50px;
         font-size: 30px;
         font-weight: bolder;
     }
-    .banner p{
+
+    .banner p {
         font-size: 17px;
         padding: 0 40px;
         font-weight: 600;
     }
-    .home-btn{
+
+    .home-btn {
         margin-bottom: 20px;
         margin-top: 30px;
         width: 160px;

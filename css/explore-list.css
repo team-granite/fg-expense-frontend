@@ -125,7 +125,9 @@ h2 {
 }
 @media screen and (max-width: 600px){
     body {
-        margin-top: 40px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px
     }
 
     .list-container {

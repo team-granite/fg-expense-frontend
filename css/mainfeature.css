@@ -1,10 +1,11 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
 .dash {
     color: green;
-    ;
     width: 8%;
     border-width: 5px;
-    border-color: #7aba11;
-    ;
+    border-color: #7aba11;    
 }
 
 .green {
@@ -12,6 +13,5 @@
 }
 
 .canvas {
-  
   background: rgba(0, 0, 0, 0.1); 
 }

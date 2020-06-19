@@ -1,0 +1,51 @@
+/* Mobile devices, 640px */
+@media (max-width: 640px) {
+  .topnav button{
+    padding: 5px;
+    float: left;
+    position: absolute;
+    z-index: 1;
+    margin-top: -17px;
+
+  }
+
+  header{
+    text-align: center;
+    position: relative;
+    margin-top: -30px;
+  }
+
+  #image{
+    display: block;
+    margin: auto;
+    height: 180px;
+  }
+
+  .box{
+    overflow: auto;
+    position: relative;
+  }
+
+  .box .box-text #text{
+    position: absolute;
+    font-size: 25px;
+  }
+
+  .container{
+    text-align: center;
+    padding: 10px;
+  }
+
+  h6{
+    color: #c0c0c0;
+  }
+
+  footer{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .mb-3{
+    margin: auto;
+  }
+  

@@ -1,0 +1,56 @@
+  h3{
+        text-align: center;
+        margin-top: 20px;
+      }
+      h3::after{
+        content: '';
+        background: green;
+        display: block;
+        height: 7px;
+        width: 70px;
+        margin: 3px auto 5px;
+      }
+      .btn, .form-control {
+        border-radius: 0px;
+      }
+      .filter-btn {
+        background-color: green;
+        color: #fff;
+      }
+      .filter-btn:hover {
+        background-color: green;
+        color: #fff;
+      }
+      .btn.active {
+        background-color: #008000;
+        color: #fff;
+      }
+      .dt {
+        color: green;
+      }
+      .btn-pick {
+        border: 1px solid green;
+        background-color: rgb(233, 230, 230);
+      }
+      .ministry{
+        color: green;
+      }
+      .page-item.active a {
+        background-color: green !important;
+        border: 1px solid transparent !important;
+      }
+
+      @media screen on(max-width: '600px'){
+       h3{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 10px
+      }
+      h3::after{
+        content: '';
+        background: green;
+        display: block;
+        height: 5px;
+        width: 50px;
+        margin: 2px auto 5px;
+      }

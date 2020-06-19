@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/contact-home.css">
+    <link rel="stylesheet" href="css/table.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Muli:&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css">
     <title>ExpenseNg</title>
 </head>
 <body> 
@@ -219,7 +223,226 @@
         </div>
     </div>
 </main>
+<!-- DataTable -->
+<header>
+  <div>
+    <h3>Daily Expenditures in Real Time</h3>
+  </div>
+</header>
+<br>
+<br>
+<div class="container">
+<h5 class="dt d-md-none">Daily Expenditures</h5>
+<div class="d-flex justify-content-between mb-3">
+  <h5 class="dt d-none d-md-block">Daily Expenditures</h5>
+  <div class="">
+    <span>20th, May 2020</span>
+    <button class="ml-3 btn d-inline btn-sm filter-btn" data-toggle="modal" data-target="#filterModal">Filter <i class="fa fa-filter"></i></button>
+  </div>
+</div>
+<table id="myTable" cell-spacing="0" data-pagination="true" data-page-size="10" class="table table-bordered table-striped table-responsive-sm">
+  <thead>
+    <tr>
+    <th>Project</th>
+    <th>Ministry</th>
+    <th>Company</th>
+    <th>Amount</th>
+    <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rehabilitation of Lagos Ibadan Express-way</td>
+      <td class="ministry">Transport</td>
+      <td>Julius Berger</td>
+      <td>N72,902,001,229</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Building of Class Blocks</td>
+      <td class="ministry">Education</td>
+      <td>Samsung</td>
+      <td>N65,001,901,123</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Rehabilitation of Lagos Ibadan Express-way</td>
+      <td class="ministry">Energy</td>
+      <td>Julius Berger</td>
+      <td>N72,902,001,229</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Building of Class Blocks</td>
+      <td class="ministry">Labour</td>
+      <td>Samsung</td>
+      <td>N65,001,901,123</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Rehabilitation of Lagos Ibadan Express-way</td>
+      <td class="ministry">Agriculture</td>
+      <td>Julius Berger</td>
+      <td>N72,902,001,229</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Building of Class Blocks</td>
+      <td class="ministry">Education</td>
+      <td>Samsung</td>
+      <td>N65,001,901,123</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Rehabilitation of Lagos Ibadan Express-way</td>
+      <td class="ministry">Aviation</td>
+      <td>Julius Berger</td>
+      <td>N72,902,001,229</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Building of Class Blocks</td>
+      <td class="ministry">Education</td>
+      <td>Samsung</td>
+      <td>N65,001,901,123</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Rehabilitation of Lagos Ibadan Express-way</td>
+      <td class="ministry">Transport</td>
+      <td>Julius Berger</td>
+      <td>N72,902,001,229</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Building of Class Blocks</td>
+      <td class="ministry">Education</td>
+      <td>Samsung</td>
+      <td>N65,001,901,123</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Rehabilitation of Lagos Ibadan Express-way</td>
+      <td class="ministry">Transport</td>
+      <td>Julius Berger</td>
+      <td>N72,902,001,229</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Building of Class Blocks</td>
+      <td class="ministry">Education</td>
+      <td>Samsung</td>
+      <td>N65,001,901,123</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Rehabilitation of Lagos Ibadan Express-way</td>
+      <td class="ministry">Energy</td>
+      <td>Julius Berger</td>
+      <td>N72,902,001,229</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Building of Class Blocks</td>
+      <td class="ministry">Labour</td>
+      <td>Samsung</td>
+      <td>N65,001,901,123</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Rehabilitation of Lagos Ibadan Express-way</td>
+      <td class="ministry">Agriculture</td>
+      <td>Julius Berger</td>
+      <td>N72,902,001,229</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Building of Class Blocks</td>
+      <td class="ministry">Education</td>
+      <td>Samsung</td>
+      <td>N65,001,901,123</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Rehabilitation of Lagos Ibadan Express-way</td>
+      <td class="ministry">Aviation</td>
+      <td>Julius Berger</td>
+      <td>N72,902,001,229</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Building of Class Blocks</td>
+      <td class="ministry">Education</td>
+      <td>Samsung</td>
+      <td>N65,001,901,123</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Rehabilitation of Lagos Ibadan Express-way</td>
+      <td class="ministry">Transport</td>
+      <td>Julius Berger</td>
+      <td>N72,902,001,229</td>
+      <td>20th,May 2020</td>
+    </tr>
+    <tr>
+      <td>Building of Class Blocks</td>
+      <td class="ministry">Education</td>
+      <td>Samsung</td>
+      <td>N65,001,901,123</td>
+      <td>20th,May 2020</td>
+    </tr>
+  </tbody>
+</table>
 
+
+<!-- Filter Modal -->
+<div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="filterModalLabel">Filter</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <section class="row">
+        <div class="col-6">
+          <p class="font-weight-bold">Select Date</p>
+          <input type="date" name="" id="" class="form-control">
+        </div>
+      </section>
+      <br>
+      <section>
+        <p class="font-weight-bold">View by</p>
+          <div class="row">
+            <div class="col-4">
+              <button class="btn btn-block btn-pick active">Day</button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-block btn-pick">Month</button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-block btn-pick">Year</button>
+            </div>
+          </div>
+      </section>
+      <br>
+      <section>
+        <p class="font-weight-bold">Sort by</p>
+          <div class="mx-3">
+            <button class="btn btn-block btn-pick active">Amount (Highest to Lowest)</button>
+            <button class="btn btn-block btn-pick">Amount (Lowest to Highest)</button>
+          </div>
+      </section>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-block active mx-5" data-dismiss="modal">Apply Filter</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
 
         <!-- BEGINNING OF OUR MAIN FEATURE -->
 <div class="mainfeature-section">
@@ -314,8 +537,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script> 
     <!-- custom script -->
     <script src="js/main.js"></script>
+    <script src="js/table.js"></script>
 </body>
 </html>

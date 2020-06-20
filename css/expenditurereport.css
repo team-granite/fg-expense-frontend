@@ -2,10 +2,144 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+}
+ /*------BANNER-------*/
+
+ .roundtable{
+    background-image: url(../img/expenditure.png);
+    width: 1400px;
+    height: 300px;
+    left: 31px;
+    top: 134px;
+    padding: 20px;
+}
+.roundtable h1 {
+    position: relative;
+    width: 920px;
+    height: 43px;
+    left: 180px;
+    top: 60px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.roundtable p {
+    position: relative;
+    width: 920px;
+    height: 43px;
+    left: 180px;
+    top: 60px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+} 
+
+/*-------------------GRAPH---------------------*/
+.graph {
+	width: fit-content;
+	padding-top: 20px;
+	background-color: white;
+	position: relative;
+}
+.graph > button {
+	position: absolute;
+	right: -120px;
+	top: 10px;
+  }
+  
+.graph .date {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-weight: bold;
+	font-size: 0.8rem;
+}
+.graph .amount {
+	position: absolute;
+	top: 260px;
+	left: -115px;
+	font-weight: bold;
+	font-size: 0.8rem;
+	transform: rotate(-90deg);
+}
+.graphbody svg {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.graphbody {
+	position: relative;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	/* padding: 0 10px; */
+ }
+ 
+.graphlabel {
+	display: flex;
+	flex-direction: column;
+	background-color: #005938;
+	width: fit-content;
+	border-radius: 5px;
+	color: white;
+	padding: 8px;
+	position: relative;
+	left: 240px;
 }
 
+.graphlines {
+	position: absolute;
+	left: 10px;
+	bottom: 0;
+	right: 10px;
+}
+.graphlines .numbers {
+	position: absolute;
+	top: -10px;
+	left: -35px;
+}
+.graphlines .numbers div {
+	margin-bottom: 5.5px;
+}
+.graphline {
+	width: 100%;
+	height: 0.1px;
+	background-color: #d7d7d7;
+	margin-bottom: 30px;
+} 
+.colors {
+	display: flex;
+	transform: translateX(-50%);
+	justify-content: space-between;
+	position: absolute;
+	bottom: -40px;
+	left: 50%;
+  }
+  .colors > span {
+	position: absolute;
+	top: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  .colors .color {
+	width: 25px;
+	height: 25px;
+	margin-right: 20px;
+  }
+
+
+/*-----------------------TABLE-----------*/
 .reponsive-div {
 	margin: 0 auto;
+	width: 85%;
 }
 .table-section {
 	padding: 8px;
@@ -27,14 +161,14 @@
 	text-align: right;
 }
 
-.table-top button {
+.table-top button, .button {
 	padding: 10px 30px;
 	background: #00945e;
 	color: white;
 	border-radius: 5px;
 	cursor: pointer;
 	outline: none;
-	border: none;
+	border: none !important;
 }
 
 .main-table {
@@ -48,7 +182,9 @@ table {
 	border-spacing: 0;
 	width: 100%;
 }
-
+.profile-summary{
+	cursor: pointer;
+}
 th,
 td {
 	text-align: left;
@@ -59,7 +195,7 @@ td {
 th {
 	background: white;
 	color: black !important;
-	font-size: 1rem;
+	font-size: 1.1rem;
 	font-weight: 600;
 	border-top: 1px solid rgba(0, 0, 0, 0.5);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -76,7 +212,7 @@ tr {
 tr:nth-child(even) {
 	background-color: #f2f2f2;
 }
-
+/*--------------------PAGINATION-------------------*/
 .table-footer {
 	display: flex;
 	justify-content: space-between;
@@ -94,7 +230,7 @@ tr:nth-child(even) {
 }
 
 .pagination a {
-	color: black;
+	color: black !important;
 	float: left;
 	padding: 8px 16px;
 	text-decoration: none;
@@ -120,8 +256,9 @@ tr:nth-child(even) {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
-
+/*-------------------RESPONSIVENESS---------*/
 @media screen and (max-width: 480px) {
+	
 	.reponsive-div {
 		width: 95%;
 	}
@@ -145,27 +282,132 @@ tr:nth-child(even) {
 	.table-footer {
 		margin: 15px 5px 40px 5px;
 	}
+	.graphbody svg {
+		width: 270px;
+	  }
+	  .graphlabel {
+		left: 110px;
+		top: 90px;
+	  }
+	  .colors {
+		left: calc(50% + 40px);
+	  }
+	  .colors .color {
+		width: 25px;
+		height: 25px;
+		margin-right: 5px;
+	  }
+	  .comment {
+		width: 95%;
+	  }
+	  .subcomment {
+		margin-left: -70px;
+	  }
 }
-
-/* CHART STYLE */
-
-.roundtable {
-	background-image: url(./assets/images/2.png);
-	/* position: absolute; */
-	width: 1400px;
-	height: 300px;
-	left: 31px;
-	top: 134px;
-	padding: 20px;
-}
-
-* {
+/*--------------------COMMENT SECTION------------------*/
+.comments {
+	background-color: rgba(0, 148, 94, 0.28);
+	display: flex;
+	flex-direction: column;
+	padding-top: 50px;
+	align-items: center;
+	padding-bottom: 20px;
+  }
+  .comments img {
+	height: fit-content;
+  }
+  
+  .comment img {
+	margin-right: 20px;
+  }
+  .comment {
 	box-sizing: border-box;
-}
-.outsidegraph {
-	margin-left: 70px;
-	margin-bottom: 20px;
-}
+	display: flex;
+	background-color: white;
+	width: 70%;
+	margin: 0 auto;
+	border: #00945e solid 1px;
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 25px;
+	position: relative;
+  }
+  .subcomment {
+	box-sizing: border-box;
+	display: flex;
+	background-color: white;
+	margin-left: 50px;
+	margin-top: 30px;
+  }
+  
+  .right {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .topright {
+	/* position: relative; */
+	color: #005938;
+	font-weight: bold;
+  }
+  
+  .topright :nth-child(2) {
+	font-size: 0.6rem;
+	margin-left: 5px;
+  }
+  
+  .topright svg {
+	position: absolute;
+	right: 20px;
+	cursor: pointer;
+  }
+  
+  .react > span {
+	margin-right: 10px;
+  }
+  
+  .flap {
+	position: absolute;
+	right: 20px;
+	top: 28px;
+	color: #323e48;
+	border: #005d3b 1px solid;
+	border-radius: 5px;
+	background-color: white;
+  }
+  .flap div {
+	padding: 5px 35px;
+	text-align: center;
+	cursor: pointer;
+  }
+  
+  .write {
+	width: 65%;
+	position: relative;
+  }
+  .write input {
+	width: 100%;
+	outline: none;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+  }
+  
+  .write svg {
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+  }
+  
+  .write svg:nth-child(2) {
+	right: 55px;
+  }
+  .write svg:nth-child(3) {
+	right: 20px;
+  }
+
+/* ----------------------CHART STYLE -------------------*/
+
 .graph {
 	width: fit-content;
 	padding-top: 20px;
@@ -233,6 +475,7 @@ tr:nth-child(even) {
 }
 
 @media only screen and (max-width: 411px) {
+	
 	.graphbody svg {
 		width: 270px;
 	}
@@ -242,13 +485,6 @@ tr:nth-child(even) {
 	}
 }
 
-.banner {
-	background: linear-gradient(rgba(0, 0, 0, 0.468), rgba(0, 0, 0, 0.423)),
-		url(../img/expense-site.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
 
 *,
 *::before,
@@ -273,7 +509,7 @@ a:active{
 	text-decoration: none !important;
 	color: #ffffff !important;
 }
-
+/*---------------------POPUP----------------------------*/
 .section-wrapper{
     background-color: rgba(5, 2, 2, 0.9);
     z-index: 10;
@@ -398,6 +634,7 @@ a:active{
 }
 
 @media all and (max-width: 900px){
+	
 	.section-container{
         max-width: 25rem;
     }
@@ -416,7 +653,8 @@ a:active{
 }
 
 @media all and (min-width: 1150px){
-    .section-container{
+	
+	.section-container{
         max-width: 40rem;
     }
 

@@ -68,34 +68,6 @@ button {
   color: #FFFFFF;
   border-radius: 5px;
 }
-/* #myInput:focus {
-    width: 50%;
-} */
-
-#myUL {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-  
-#myUL li a {
-  border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block
-}
-  
-#myUL li a:hover:not(.header) {
-  background-color: #eee;
-}
-h3 {
-  margin: 0px;
-}
-
 @media (min-width: 300px) and (max-width: 425px) {
   #searchBar {
     display: flex;

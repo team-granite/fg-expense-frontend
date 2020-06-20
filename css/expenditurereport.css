@@ -137,6 +137,11 @@
 
 
 /*-----------------------TABLE-----------*/
+
+.container p{
+	text-align: center;
+}
+
 .reponsive-div {
 	margin: 0 auto;
 	width: 85%;
@@ -485,7 +490,6 @@ tr:nth-child(even) {
 	}
 }
 
-
 *,
 *::before,
 *::after{
@@ -510,6 +514,8 @@ a:active{
 	color: #ffffff !important;
 }
 /*---------------------POPUP----------------------------*/
+/* Pop up for projest summary */
+
 .section-wrapper{
     background-color: rgba(5, 2, 2, 0.9);
     z-index: 10;
@@ -583,7 +589,9 @@ a:active{
 
 .btn a{
     color: #ffffff;
-    font-size: .8rem;
+	font-size: .8rem;
+	text-decoration: none !important;
+	color: #ffffff !important;
 }
 
 .btn img{

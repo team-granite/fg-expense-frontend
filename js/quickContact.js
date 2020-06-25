@@ -1,8 +1,6 @@
 let ministerData = { page: 1 };
 let ministryData = { page: 1 };
 let limit = 2;
-// ministerData["page"] = 1;
-// ministryData["page"] = 1;
 let gap = 5;
 const accordion = document.querySelector("#accordion");
 const ministers = document.querySelector('#ministers');
@@ -39,13 +37,14 @@ const runPagination = (page, element, elemDetails, pages, totalCount) => {
     }
 
     for (i = maxLeft; i <= maxRight; i++) {
-        console.log(i, page)
+
         element.innerHTML += i === page ? `<li class="page-item num"><a class="page-link active" href="#">${i}</a></li>` : `<li class="page-item num"><a class="page-link" href="#">${i}</a></li>`
     }
 
-    let isEnd = page === pages ? "page-link disabled" : "page-link";
+    console.log(page, pages)
+    let isEnd = page === pages ? `page-link disabled` : `page-link`;
     element.innerHTML += `<li class="page-item">
-                                <a id="next" class=${isEnd} aria-label="Next" title="End of Page" href="#">
+                                <a id="next" class="${isEnd}" aria-label="Next" title="End of Page" href="#">
                                     &raquo
                                 </a>
                             </li>`;
@@ -69,10 +68,10 @@ const getAllMinisters = async (page = 1, limit = 2) => {
 
     MdaHandle.forEach(ministry => {
         output += `<tr>
-                                                <td>${ministry.name}</td>
-                                                <td>${ministry.head}</td>
-                                                <td>${ministry.head_handle}</td>
-                                            </tr>`
+                        <td>${ministry.name}</td>
+                        <td>${ministry.head}</td>
+                        <td>${ministry.head_handle}</td>
+                    </tr>`
     })
     ministers.innerHTML = output;
 
@@ -94,9 +93,9 @@ const getAllMinistries = async (page = 1, limit = 2) => {
 
     allMDAs.forEach(ministry => {
         output += `<tr>
-                                                <td>${ministry.short_name}</td>
-                                                <td>${ministry.twitter_handle}</td>
-                                            </tr>`
+                        <td>${ministry.short_name}</td>
+                        <td>${ministry.twitter_handle}</td>
+                    </tr>`
     })
     ministries.innerHTML = output;
 
@@ -123,7 +122,6 @@ const handleClick = (e, fxn, data) => {
     } else if (e.target.closest('.page-item.num')) {
         const pages = document.querySelectorAll('#pagination-ministers a')
         data.page = +e.target.textContent;
-        console.log('num', data.page)
         pages.forEach(item => item.classList.remove('active'));
         e.target.classList.add('active');
         fxn(data.page, limit)
